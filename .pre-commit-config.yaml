@@ -1,0 +1,45 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 56b4a7e506901ff86f8de5c2551bc41f8eacf717
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+
+
+-   repo: https://github.com/nbQA-dev/nbQA
+    rev: 71996b20d975c13d08e8e70c47f04f340ec4769b
+    hooks:
+    -   id: nbqa
+    -   id: nbqa-black
+    -   id: nbqa-isort
+    # -   id: nbqa-pylint
+    -   id: nbqa-pyupgrade
+
+-   repo: https://github.com/psf/black
+    rev: 64c8be01f0cfedc94cb1c9ebd342ea77cafbb78a
+    hooks:    
+    -   id: black
+        name: black
+        description: "Black: The uncompromising Python code formatter"
+        entry: black
+        language: python
+        args: [--max-line-length=131]
+        minimum_pre_commit_version: 2.9.2
+        require_serial: true
+        types_or: [python, pyi]
+    -   id: black-jupyter
+        name: black-jupyter
+        description:
+          "Black: The uncompromising Python code formatter (with Jupyter Notebook support)"
+        entry: black
+        language: python
+        args: [--line-length=131]
+        minimum_pre_commit_version: 2.9.2
+        require_serial: true
+        types_or: [python, pyi, jupyter]
+        additional_dependencies: [".[jupyter]"]
+
+-   repo: https://github.com/pycqa/isort
+    rev: c154ecff496bf9309eaf5d887f4aa4a0abba28a2
+    hooks:
+    -   id: isort
