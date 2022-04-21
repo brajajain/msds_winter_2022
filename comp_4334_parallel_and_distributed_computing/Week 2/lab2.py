@@ -55,6 +55,9 @@ celcius_temps = farenheit_temps_rdd.map(farenheit_to_celcius_conversion)
 
 celcius_temps_above_freezing = celcius_temps.filter(lambda x: x > 0)
 
-print("Average of all of the Celcius values above freezing:", celcius_temps_above_freezing.mean())
+print(
+    "Average of all of the Celcius values above freezing:",
+    celcius_temps_above_freezing.mean(),
+)
 
 # COMMAND ----------

@@ -1,0 +1,32 @@
+# Data Schema
+root
+ |-- S1_Temp: float (nullable = true)
+ |-- S2_Temp: float (nullable = true)
+ |-- S3_Temp: float (nullable = true)
+ |-- S4_Temp: float (nullable = true)
+ |-- S1_Light: float (nullable = true)
+ |-- S2_Light: float (nullable = true)
+ |-- S3_Light: float (nullable = true)
+ |-- S4_Light: float (nullable = true)
+ |-- S1_Sound: float (nullable = true)
+ |-- S2_Sound: float (nullable = true)
+ |-- S3_Sound: float (nullable = true)
+ |-- S4_Sound: float (nullable = true)
+ |-- S5_CO2: float (nullable = true)
+ |-- S5_CO2_Slope: float (nullable = true)
+ |-- S6_PIR: float (nullable = true)
+ |-- S7_PIR: float (nullable = true)
+ |-- Room_Occupancy_Count: long (nullable = true)
+ |-- timestamp: timestamp (nullable = true)
+
+# Data Split
+Original data size: 10129
+Train data size: 8104
+Test data size: 2025
+
+Training Data Performance 
+Accuracy Score: 0.9998766041461007
+
+Testing Data Performance
+Accuracy Score: 0.7283950617283951
+

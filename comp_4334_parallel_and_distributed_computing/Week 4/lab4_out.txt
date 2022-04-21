@@ -1,0 +1,67 @@
+# RAJA JAIN
+# DEMO OUTPUT
+Initial links: [('a', ['b', 'c']), ('b', ['a']), ('c', ['b']), ('d', ['a'])]
+Initial rankings: [('d', 0.25), ('b', 0.25), ('a', 0.25), ('c', 0.25)]
+Iteration: 0
+Joined RDD: [('d', (['a'], 0.25)), ('c', (['b'], 0.25)), ('b', (['a'], 0.25)), ('a', (['b', 'c'], 0.25))]
+Neighbor contributions: [('a', 0.25), ('b', 0.25), ('a', 0.25), ('b', 0.125), ('c', 0.125)]
+New rankings: [('c', 0.125), ('b', 0.375), ('a', 0.5)]
+Iteration: 1
+Joined RDD: [('c', (['b'], 0.125)), ('a', (['b', 'c'], 0.5)), ('b', (['a'], 0.375))]
+Neighbor contributions: [('b', 0.125), ('b', 0.25), ('c', 0.25), ('a', 0.375)]
+New rankings: [('c', 0.25), ('a', 0.375), ('b', 0.375)]
+Iteration: 2
+Joined RDD: [('b', (['a'], 0.375)), ('a', (['b', 'c'], 0.375)), ('c', (['b'], 0.25))]
+Neighbor contributions: [('a', 0.375), ('b', 0.1875), ('c', 0.1875), ('b', 0.25)]
+New rankings: [('b', 0.4375), ('a', 0.375), ('c', 0.1875)]
+Iteration: 3
+Joined RDD: [('b', (['a'], 0.4375)), ('c', (['b'], 0.1875)), ('a', (['b', 'c'], 0.375))]
+Neighbor contributions: [('a', 0.4375), ('b', 0.1875), ('b', 0.1875), ('c', 0.1875)]
+New rankings: [('b', 0.375), ('c', 0.1875), ('a', 0.4375)]
+Iteration: 4
+Joined RDD: [('c', (['b'], 0.1875)), ('a', (['b', 'c'], 0.4375)), ('b', (['a'], 0.375))]
+Neighbor contributions: [('b', 0.1875), ('b', 0.21875), ('c', 0.21875), ('a', 0.375)]
+New rankings: [('c', 0.21875), ('a', 0.375), ('b', 0.40625)]
+Iteration: 5
+Joined RDD: [('b', (['a'], 0.40625)), ('a', (['b', 'c'], 0.375)), ('c', (['b'], 0.21875))]
+Neighbor contributions: [('a', 0.40625), ('b', 0.1875), ('c', 0.1875), ('b', 0.21875)]
+New rankings: [('b', 0.40625), ('a', 0.40625), ('c', 0.1875)]
+Iteration: 6
+Joined RDD: [('b', (['a'], 0.40625)), ('a', (['b', 'c'], 0.40625)), ('c', (['b'], 0.1875))]
+Neighbor contributions: [('a', 0.40625), ('b', 0.203125), ('c', 0.203125), ('b', 0.1875)]
+New rankings: [('b', 0.390625), ('a', 0.40625), ('c', 0.203125)]
+Iteration: 7
+Joined RDD: [('c', (['b'], 0.203125)), ('a', (['b', 'c'], 0.40625)), ('b', (['a'], 0.390625))]
+Neighbor contributions: [('b', 0.203125), ('b', 0.203125), ('c', 0.203125), ('a', 0.390625)]
+New rankings: [('c', 0.203125), ('a', 0.390625), ('b', 0.40625)]
+Iteration: 8
+Joined RDD: [('b', (['a'], 0.40625)), ('c', (['b'], 0.203125)), ('a', (['b', 'c'], 0.390625))]
+Neighbor contributions: [('a', 0.40625), ('b', 0.203125), ('b', 0.1953125), ('c', 0.1953125)]
+New rankings: [('b', 0.3984375), ('c', 0.1953125), ('a', 0.40625)]
+Iteration: 9
+Joined RDD: [('b', (['a'], 0.3984375)), ('a', (['b', 'c'], 0.40625)), ('c', (['b'], 0.1953125))]
+Neighbor contributions: [('a', 0.3984375), ('b', 0.203125), ('c', 0.203125), ('b', 0.1953125)]
+New rankings: [('b', 0.3984375), ('a', 0.3984375), ('c', 0.203125)]
+Final sorted rankings:
+a has rank: 0.3984375
+b has rank: 0.3984375
+c has rank: 0.203125
+
+# SHORT OUTPUT
+Final sorted rankings:
+www.example15.com has rank: 0.3499115869341563
+www.example18.com has rank: 0.30302037787208513
+www.example14.com has rank: 0.04556233389060357
+www.example5.com has rank: 0.042994470164609055
+www.example20.com has rank: 0.040713145147462285
+www.example1.com has rank: 0.03888915680727024
+www.example4.com has rank: 0.029898083847736623
+www.example12.com has rank: 0.024510513117283948
+www.example6.com has rank: 0.02323093492798354
+www.example10.com has rank: 0.0220679012345679
+www.example13.com has rank: 0.016064386145404664
+www.example19.com has rank: 0.016064386145404664
+www.example11.com has rank: 0.01586250964506173
+www.example8.com has rank: 0.014925733024691358
+www.example7.com has rank: 0.00946140367798354
+www.example16.com has rank: 0.006823077417695474

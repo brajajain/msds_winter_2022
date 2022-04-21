@@ -1,0 +1,69 @@
+# Raja Jain
+
+* Joined Table * 
+
+root
+ |-- playerID: string (nullable = true)
+ |-- teamID: string (nullable = true)
+ |-- nameFirst: string (nullable = true)
+ |-- nameLast: string (nullable = true)
+ |-- teamName: string (nullable = true)
+
++---------+------+---------+---------+--------------------+
+| playerID|teamID|nameFirst| nameLast|            teamName|
++---------+------+---------+---------+--------------------+
+|ferreri01|   BOS|     Rick|  Ferrell|      Boston Red Sox|
+|averiea01|   CLE|     Earl|  Averill|     Cleveland Blues|
+|simmoal01|   CHA|       Al|  Simmons|   Chicago White Sox|
+|gehrilo01|   NYA|      Lou|   Gehrig|New York Highlanders|
+|gomezle01|   NYA|    Lefty|    Gomez|    New York Yankees|
+|gehrilo01|   NYA|      Lou|   Gehrig|    New York Yankees|
+| ruthba01|   NYA|     Babe|     Ruth|New York Highlanders|
+|ferreri01|   BOS|     Rick|  Ferrell|    Boston Americans|
+|crowdal01|   WS1|  General|  Crowder| Washington Senators|
+|averiea01|   CLE|     Earl|  Averill|  Cleveland Bronchos|
+|averiea01|   CLE|     Earl|  Averill|   Cleveland Indians|
+|chapmbe01|   NYA|      Ben|  Chapman|    New York Yankees|
+| ruthba01|   NYA|     Babe|     Ruth|    New York Yankees|
+|dickebi01|   NYA|     Bill|   Dickey|    New York Yankees|
+|cronijo01|   WS1|      Joe|   Cronin| Washington Senators|
+|dykesji01|   CHA|    Jimmy|    Dykes|   Chicago White Sox|
+|gomezle01|   NYA|    Lefty|    Gomez|New York Highlanders|
+|chapmbe01|   NYA|      Ben|  Chapman|New York Highlanders|
+|gehrich01|   DET|  Charlie|Gehringer|      Detroit Tigers|
+|averiea01|   CLE|     Earl|  Averill|      Cleveland Naps|
++---------+------+---------+---------+--------------------+
+only showing top 20 rows
+
+* Parquet Query * 
+
+Row Count: 24
++---------+----------+
+|nameFirst|nameLast  |
++---------+----------+
+|Jeffrey  |Hammonds  |
+|Preston  |Wilson    |
+|Matt     |Holliday  |
+|Brad     |Hawpe     |
+|Nolan    |Arenado   |
+|Andres   |Galarraga |
+|Larry    |Walker    |
+|Charlie  |Blackmon  |
+|Todd     |Helton    |
+|Aaron    |Cook      |
+|Ubaldo   |Jimenez   |
+|Shawn    |Chacon    |
+|Jason    |Marquis   |
+|Ellis    |Burks     |
+|Jeff     |Cirillo   |
+|Troy     |Tulowitzki|
+|Vinny    |Castilla  |
+|Mike     |Hampton   |
+|Brian    |Fuentes   |
+|Michael  |Cuddyer   |
+|DJ       |LeMahieu  |
+|Carlos   |Gonzalez  |
+|Eric     |Young     |
+|Dante    |Bichette  |
++---------+----------+
+

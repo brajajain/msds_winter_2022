@@ -1,12 +1,14 @@
 # Raja Jain
 
-def copy_files_with_subname_to_dir(subname:str=None, num_files:int=None):
+
+def copy_files_with_subname_to_dir(subname: str = None, num_files: int = None):
     directory_name = f"FileStore/tables/lab3{subname}"
     dbutils.fs.mkdirs(directory_name)
     for i in range(num_files):
         file_name = f"FileStore/tables/{subname}Lab3data{i}.txt"
         print(f"Copying\n    file: {file_name}\n    to directory: {directory_name}")
         dbutils.fs.cp(file_name, directory_name)
+
 
 # COMMAND ----------
 
@@ -23,12 +25,14 @@ copy_files_with_subname_to_dir("full", 4)
 # helper functions to process url data
 sc = spark.sparkContext
 
+
 def return_tuple_from_url_list(url_list):
     # split urls by space
     split_urls = url_list.split(" ")
     return split_urls[0], split_urls[1:]
 
-def find_reference_web_pages(data_path:str=None):
+
+def find_reference_web_pages(data_path: str = None):
     # import raw data
     raw_data = sc.textFile(data_path)
     # convert to rdd
@@ -38,9 +42,12 @@ def find_reference_web_pages(data_path:str=None):
     # swap positions of tuples to set referenced webpages as keys for later use in an aggregation function
     swap_tuples = flattened_pair_rdd.map(lambda x: (x[1], x[0]))
     # aggregation operation, group data by referenced webpage and return list of webpages that referenced it
-    referenced_web_pages = swap_tuples.groupByKey().mapValues(lambda x: sorted(list(set(x))))
+    referenced_web_pages = swap_tuples.groupByKey().mapValues(
+        lambda x: sorted(list(set(x)))
+    )
     referenced_web_pages = referenced_web_pages.sortByKey()
     return referenced_web_pages
+
 
 # COMMAND ----------
 

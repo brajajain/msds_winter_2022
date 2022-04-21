@@ -1,0 +1,32 @@
+Raja Jain
+Airports with no direct roundtrip to or from DEN:
++----------+----------+
+|         a|         b|
++----------+----------+
+|{CDR, 193}|{DEN, 529}|
+|{DEN, 529}| {AIA, 67}|
+|{DEN, 529}| {ORF, 69}|
++----------+----------+
+
+
+Airports that take 4 or more flights to get to from DEN:
++-----+---+----------+
+|index| id| distances|
++-----+---+----------+
+|  383|VAK|{DEN -> 4}|
+|  204|HPB|{DEN -> 4}|
+|  309|NUL|{DEN -> 4}|
+|  296|AUK|{DEN -> 4}|
+|  128|SHG|{DEN -> 4}|
+|  243|MLL|{DEN -> 4}|
+|  466|OOK|{DEN -> 4}|
+|  125|WNA|{DEN -> 4}|
+|  388|TNC|{DEN -> 4}|
+|  455|CEM|{DEN -> 4}|
+|  447|TOG|{DEN -> 4}|
+|  131|KAL|{DEN -> 4}|
+|  134|ANV|{DEN -> 4}|
+|  352|WSN|{DEN -> 4}|
+|  298|HSL|{DEN -> 4}|
+|  133|VEE|{DEN -> 4}|
++-----+---+----------+

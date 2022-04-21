@@ -1,0 +1,36 @@
+Raja Jain
+
+short data output
+
+('www.example1.com', ['www.example14.com', 'www.example16.com', 'www.example3.com', 'www.example4.com', 'www.example7.com', 'www.example9.com'])
+('www.example10.com', ['www.example20.com'])
+('www.example11.com', ['www.example8.com'])
+('www.example12.com', ['www.example19.com', 'www.example4.com'])
+('www.example13.com', ['www.example5.com'])
+('www.example14.com', ['www.example10.com', 'www.example11.com', 'www.example3.com', 'www.example7.com'])
+('www.example15.com', ['www.example1.com', 'www.example18.com'])
+('www.example16.com', ['www.example12.com'])
+('www.example18.com', ['www.example15.com', 'www.example2.com', 'www.example4.com', 'www.example7.com'])
+('www.example19.com', ['www.example2.com', 'www.example5.com'])
+('www.example2.com', ['www.example3.com'])
+('www.example20.com', ['www.example14.com', 'www.example17.com', 'www.example5.com'])
+('www.example4.com', ['www.example16.com', 'www.example17.com', 'www.example6.com'])
+('www.example5.com', ['www.example1.com', 'www.example20.com', 'www.example3.com'])
+('www.example6.com', ['www.example12.com', 'www.example13.com'])
+('www.example7.com', ['www.example12.com', 'www.example16.com'])
+('www.example8.com', ['www.example12.com', 'www.example4.com'])
+
+full data output
+
+count: 99584
+
+('www.example1.com', ['www.example10444.com', 'www.example33108.com', 'www.example38177.com', 'www.example55699.com', 'www.example57376.com', 'www.example72549.com', 'www.example82521.com', 'www.example94619.com'])
+('www.example10.com', ['www.example31480.com', 'www.example32441.com', 'www.example35833.com', 'www.example37322.com', 'www.example39583.com', 'www.example59772.com', 'www.example7313.com', 'www.example94259.com'])
+('www.example100.com', ['www.example15270.com', 'www.example30972.com', 'www.example39623.com', 'www.example42465.com', 'www.example8219.com', 'www.example88000.com'])
+('www.example1000.com', ['www.example21434.com', 'www.example4238.com', 'www.example81432.com', 'www.example9523.com', 'www.example96395.com'])
+('www.example10000.com', ['www.example23061.com', 'www.example33274.com', 'www.example44484.com'])
+('www.example100000.com', ['www.example40090.com', 'www.example40104.com', 'www.example48175.com', 'www.example58537.com', 'www.example65426.com', 'www.example69557.com'])
+('www.example10001.com', ['www.example56344.com', 'www.example9856.com'])
+('www.example10002.com', ['www.example13258.com', 'www.example15859.com', 'www.example16921.com', 'www.example18482.com', 'www.example34053.com', 'www.example48273.com', 'www.example60617.com'])
+('www.example10003.com', ['www.example24039.com', 'www.example7180.com', 'www.example72155.com'])
+('www.example10004.com', ['www.example11907.com', 'www.example30952.com', 'www.example50633.com', 'www.example64570.com'])

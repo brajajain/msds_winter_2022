@@ -1,0 +1,11 @@
+* * * * * * * * * *  SQL QUERY RESULTS * * * * * * * * * * 
+[Row(birthState='CO', count_player_ID=32)]
+
+* * * * * * * * * *  DATA FRAME FUNCTIONS RESULTS * * * * * * * * * * 
+[Row(birthState='CO', count(playerID)=32)]
+
+* * * * * * * * * *  SQL QUERY RESULTS * * * * * * * * * * 
+[Row(birthCountry='Panama', average_player_height=72.66666666666667), Row(birthCountry='D.R.', average_player_height=72.32142857142857), Row(birthCountry='Greece', average_player_height=72.0), Row(birthCountry='Mexico', average_player_height=71.5), Row(birthCountry='V.I.', average_player_height=71.5), Row(birthCountry='USA', average_player_height=71.23987206823028), Row(birthCountry='Venezuela', average_player_height=71.23809523809524), Row(birthCountry='Italy', average_player_height=71.0), Row(birthCountry='Poland', average_player_height=71.0), Row(birthCountry='CAN', average_player_height=70.76470588235294), Row(birthCountry='Cuba', average_player_height=70.68518518518519), Row(birthCountry='Ireland', average_player_height=70.25), Row(birthCountry='United Kingdom', average_player_height=69.54166666666667), Row(birthCountry='Australia', average_player_height=67.0)]
+
+* * * * * * * * * *  DATA FRAME FUNCTIONS RESULTS * * * * * * * * * * 
+[Row(birthCountry='Panama', avg(height)=72.66666666666667), Row(birthCountry='D.R.', avg(height)=72.32142857142857), Row(birthCountry='Greece', avg(height)=72.0), Row(birthCountry='Mexico', avg(height)=71.5), Row(birthCountry='V.I.', avg(height)=71.5), Row(birthCountry='USA', avg(height)=71.23987206823028), Row(birthCountry='Venezuela', avg(height)=71.23809523809524), Row(birthCountry='Italy', avg(height)=71.0), Row(birthCountry='Poland', avg(height)=71.0), Row(birthCountry='CAN', avg(height)=70.76470588235294), Row(birthCountry='Cuba', avg(height)=70.68518518518519), Row(birthCountry='Ireland', avg(height)=70.25), Row(birthCountry='United Kingdom', avg(height)=69.54166666666667), Row(birthCountry='Australia', avg(height)=67.0)]
